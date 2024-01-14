@@ -1,0 +1,33 @@
+.input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.showHidePassword {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.showHidePassword:hover {
+  cursor: pointer;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  span {
+    font-size: 1.4rem;
+    padding-top: 4px;
+    color: red;
+    text-align: left;
+    display: none;
+  }
+}
+
+.input.focused:invalid ~ span {
+  display: block;
+}

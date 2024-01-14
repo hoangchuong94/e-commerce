@@ -1,0 +1,30 @@
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.outline {
+  border: 1px solid white;
+  color: white;
+}
+
+.button.small {
+  padding: 10px 22px;
+}
+
+.button.medium {
+  padding: 12px 24px;
+}
+
+.button.big {
+  padding: 14px 26px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

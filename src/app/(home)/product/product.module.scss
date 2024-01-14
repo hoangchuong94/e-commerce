@@ -1,0 +1,131 @@
+.container {
+  background-color: var(--bg-section);
+}
+
+.section-product-sumary {
+  padding: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-sumary-wrapper {
+  display: flex;
+}
+
+.product-image {
+  position: relative;
+  width: 50%;
+  min-height: 600px;
+}
+
+.product-sumary {
+  width: 50%;
+  padding: 40px;
+
+  .product-sumary-category {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    margin-top: 16px;
+  }
+
+  .product-sumary-name {
+    text-transform: capitalize;
+
+    margin-top: 16px;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .product-sumary-price {
+    p {
+      font-size: 2.4rem;
+    }
+    del {
+      color: #949596;
+      margin-right: 10px;
+    }
+  }
+
+  .product-sumary-desc {
+    font-size: 1.6rem;
+    margin-top: 16px;
+  }
+
+  .product-sumary-btn-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    input {
+      outline: none;
+      border: 1px solid #dddd;
+      padding: 12px;
+      max-width: 80px;
+      margin-right: 20px;
+      font-size: 1.6rem;
+      height: 100%;
+    }
+  }
+}
+
+.detail-information {
+  margin-top: 80px;
+}
+
+.nav-detail {
+  border-top: 1px solid #3333;
+}
+
+.list-nav-detail {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  text-transform: capitalize;
+  .item-nav-detail {
+    padding: 0 14px;
+    border-top: 4px solid transparent;
+  }
+  .item-nav-detail:hover {
+    cursor: pointer;
+  }
+
+  .item-nav-detail.active {
+    border-top: 4px solid #0084d6;
+  }
+}
+
+.detail {
+  margin-top: 50px;
+  h1 {
+    text-transform: capitalize;
+    font-size: 2.6rem;
+  }
+  p {
+    font-size: 1.6rem;
+    margin: 20px 0 60px 0;
+  }
+}
+
+.list-detail-image {
+  .item-detail {
+    display: flex;
+    .detail-image {
+      width: 50%;
+      position: relative;
+    }
+    .detail-desc-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: white;
+      width: 50%;
+      padding: 5%;
+    }
+  }
+  .item-detail.active {
+    flex-direction: row-reverse;
+  }
+}

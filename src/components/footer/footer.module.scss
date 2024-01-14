@@ -1,0 +1,160 @@
+.container {
+  background-color: white;
+  font-size: 1.6rem;
+  > div {
+    border-top: 1px solid #dddd;
+  }
+}
+.title {
+  font-size: 2.8rem;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+}
+
+.title a,
+.list-connect-item span {
+  color: black;
+  font-size: 1.8rem;
+  padding: 20px 0;
+  text-align: center;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.title a:hover,
+.list-connect-item span:hover {
+  color: var(--blue-3);
+}
+
+.section {
+  padding: 80px 100px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img {
+    height: 30px;
+    max-width: 90px;
+    margin-top: 8px;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.women-category,
+.men-category {
+  text-transform: capitalize;
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  a {
+    color: rgba(0, 0, 0, 0.51);
+  }
+  a:hover {
+    color: #0075be;
+  }
+}
+
+.subscribe {
+  text-transform: capitalize;
+  h2 {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 20px;
+    margin: 14px 0;
+    border: 1px solid #dddd;
+  }
+}
+
+.infor,
+.list-connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infor {
+  padding: 20px 100px;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.list-connect-item {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 80px;
+  }
+
+  .infor {
+    padding: 20px 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .footer-subscribe {
+    border-top: 1px solid #0075be;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .infor {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 548px) {
+  .logo {
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .women-category {
+    margin: 50px 0 20px 0;
+  }
+  .subscribe {
+    margin-top: 30px;
+  }
+  .infor {
+    flex-direction: column;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .conection {
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--bg-section);
+}
+
+.mySwiper {
+  display: flex;
+}
+
+.store-section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.store {
+  padding: 108px 20px 100px 20px;
+  display: flex;
+}
+
+.products-wrapper {
+  width: 75%;
+  padding: 86px 40px;
+  background-color: white;
+}
+
+@media (max-width: 984px) {
+  .store {
+    flex-direction: column-reverse;
+  }
+  .products-wrapper {
+    width: 100%;
+  }
+}

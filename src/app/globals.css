@@ -1,0 +1,75 @@
+:root {
+  --bg-section: #f5f7f9;
+  --bg-section-dark: #202223;
+  --blue: #0084d6;
+  --blue-2: #0274be;
+  --blue-3: #0075be;
+  --bg-black: #121212;
+  --space-section-md: 80px 20px 100px 20px;
+  --space-section-xm: 50px 0 40px 0;
+  --max-width-section-md: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: black;
+}

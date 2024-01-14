@@ -1,0 +1,159 @@
+.container {
+  background-color: var(--bg-section);
+}
+
+.section-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.contact-title {
+  padding: 100px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--max-width-section-md);
+  h4 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  span {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: var(--blue-2);
+    margin: 10px 0 30px 0;
+  }
+}
+
+.contact-list {
+  display: flex;
+}
+
+.contact-item {
+  width: 25%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  margin: 10px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.05);
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 1.8rem;
+    color: #0274be;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-item:hover {
+  cursor: pointer;
+}
+
+.feedback-wrapper {
+  padding-top: 60px;
+}
+.feedback {
+  display: flex;
+  margin: 10px;
+}
+.feedback-description {
+  flex: 1;
+  padding: 90px 100px 0 0;
+  h6 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+    padding-bottom: 25px;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+.feedback-form {
+  background-color: white;
+  flex: 1;
+  padding: 30px 40px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.05);
+  input {
+    padding: 10px;
+    border: 1px solid #dddd;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #dddd;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-title {
+    padding: 40px 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
+  .contact-item {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+  }
+  .contact-list {
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact-item {
+    width: auto;
+  }
+  .feedback-wrapper {
+    padding-top: 20px;
+  }
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback-description {
+    padding: 0;
+    text-align: center;
+    padding-bottom: 40px;
+    h2 {
+      padding-bottom: 10px;
+    }
+  }
+  .feedback-form {
+    background-color: transparent;
+    padding: 0;
+  }
+}

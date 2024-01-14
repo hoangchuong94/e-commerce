@@ -1,0 +1,38 @@
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(3, 226px);
+  gap: 20px;
+}
+.member-item {
+  background-color: var(--bg-section);
+  border-radius: 20px;
+}
+
+.member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+
+.member-infor {
+  margin-top: 20px;
+  text-align: center;
+  h4 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 767px) {
+  .member-list {
+    width: 80%;
+    grid-template-columns: auto;
+  }
+}

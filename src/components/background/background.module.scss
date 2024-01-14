@@ -1,0 +1,301 @@
+.container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  z-index: 1;
+}
+
+.background.background {
+  min-height: 700px;
+}
+
+.container.baner,
+.container.basic {
+  min-height: 500px;
+}
+
+.image {
+  position: absolute;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inset: 0;
+  z-index: -1;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(180deg, #0084d6 -50%, #000000 100%);
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  opacity: 0.49;
+}
+
+.wrapper-content {
+  color: white;
+  width: 100%;
+  display: flex;
+  padding: 10%;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.basic {
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.infor {
+  h1 {
+    font-size: 6.6rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+}
+
+.baner {
+  .infor {
+    h1 {
+      font-size: 4.2rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.wrapper-button {
+  display: flex;
+  button + button {
+    margin-left: 20px;
+  }
+}
+
+.basic {
+  .wrapper-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .content {
+    width: 70%;
+  }
+
+  .image {
+    background-attachment: local;
+  }
+
+  .background {
+    .infor {
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .baner {
+    .infor {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container.background {
+    min-height: 500px;
+  }
+
+  .container.baner,
+  .container.basic {
+    min-height: 300px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .background {
+    .infor {
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .baner {
+    .infor {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .basic {
+    .infor {
+      h1 {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .container.background {
+    min-height: 300px;
+  }
+
+  .container.baner {
+    min-height: 100px;
+  }
+
+  .container.basic {
+    min-height: 200px;
+  }
+  .content {
+    line-height: 1.2;
+  }
+
+  .background {
+    .infor {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .baner {
+    .infor {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .basic {
+    .infor {
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .wrapper-button {
+    flex-direction: column;
+    button + button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 319px) {
+  .container.background {
+    min-height: 200px;
+  }
+
+  .container.baner {
+    min-height: 100px;
+  }
+  .background {
+    .infor {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+      button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .baner {
+    .infor {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+      button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .basic {
+    .infor {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

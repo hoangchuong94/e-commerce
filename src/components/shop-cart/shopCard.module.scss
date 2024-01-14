@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 0 14px;
+}
+
+.total-price {
+  padding-right: 8px;
+}
+
+.shopping-card-icon {
+  position: relative;
+}
+
+.product-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -120%);
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
