@@ -12,7 +12,7 @@ import Image from "next/image";
 import logo from "/public/logo1@2x-free-img.png";
 import Navbar from "@/components/navbar/Navbar";
 import Account from "@/components/account/Account";
-import ShopCard from "@/components/shop-cart/ShopCard";
+import ShopCart from "@/components/shop-cart/ShopCart";
 
 const cx = classnames.bind(styles);
 
@@ -44,7 +44,7 @@ export default function Header() {
               <Navbar />
             </div>
             <div className={cx("wrapper-shopcard")}>
-              <ShopCard />
+              <ShopCart />
             </div>
             <div className={cx("account")}>
               <Account />
