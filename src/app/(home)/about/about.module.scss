@@ -4,7 +4,7 @@
 }
 
 .section-infor {
-  background-color: var(--bg-section);
+  background-color: var(--bg-section-color);
   display: flex;
   padding: 60px;
 }
@@ -88,7 +88,7 @@
 }
 
 .fllow-content-wrapper {
-  background-color: var(--bg-section);
+  background-color: var(--bg-section-color);
   display: flex;
   justify-content: center;
 }
@@ -135,7 +135,7 @@
   }
   .infor-image {
     min-height: 400px;
-    max-width: var(--max-width-section-md);
+    max-width: 1200px;
   }
 }
 

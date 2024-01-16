@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--bg-section);
+  background-color: var(--bg-section-color);
 }
 
 .mySwiper {
@@ -18,7 +18,7 @@
 
 .products-wrapper {
   width: 75%;
-  padding: 86px 40px;
+  padding: 40px;
   background-color: white;
 }
 
@@ -28,5 +28,20 @@
   }
   .products-wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .store {
+    padding: 20px 10px;
+  }
+  .products-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .products-wrapper {
+    padding: 0;
   }
 }

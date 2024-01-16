@@ -44,7 +44,7 @@
 
 .menu-icon {
   padding-left: 8px;
-  font-size: 3rem;
+  font-size: 2.8rem;
   :hover {
     cursor: pointer;
   }
@@ -77,6 +77,28 @@
 }
 
 @media (max-width: 980px) {
+  .logo {
+    width: 100px;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar,
+  .account {
+    display: none;
+  }
+
+  .account-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 425) {
   .menu-icon {
     display: block;
   }

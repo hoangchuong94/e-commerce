@@ -18,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <main className={cx("container")}>
-      <div className={cx("store")}>
+      <section className={cx("store")}>
         <WidgetProduct />
         <div className={cx("products-wrapper")}>{children}</div>
-      </div>
+      </section>
     </main>
   );
 }

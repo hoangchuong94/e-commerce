@@ -1,12 +1,12 @@
 .product-featured-container,
 .product-option {
-  padding: var(--space-section-md);
+  padding: 80px 20px 100px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .section-product-featured {
-  background-color: var(--bg-section);
+  background-color: var(--bg-section-color);
 }
 
 .product-featured {
@@ -36,7 +36,13 @@
   }
 }
 @media (max-width: 767px) {
-  .section-product-option {
-    padding: var(--space-section-xm);
+  .product-featured-title {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .product-featured-container {
+    padding: 80px 0 100px 0;
   }
 }

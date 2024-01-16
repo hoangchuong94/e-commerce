@@ -1,13 +1,10 @@
 :root {
-  --bg-section: #f5f7f9;
-  --bg-section-dark: #202223;
+  --bg-section-color: #f5f7f9;
+  --bg-section-color-dark: #202223;
   --blue: #0084d6;
   --blue-2: #0274be;
   --blue-3: #0075be;
   --bg-black: #121212;
-  --space-section-md: 80px 20px 100px 20px;
-  --space-section-xm: 50px 0 40px 0;
-  --max-width-section-md: 1200px;
 }
 
 * {
