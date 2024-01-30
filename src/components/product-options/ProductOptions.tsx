@@ -45,7 +45,6 @@ const ProductOptions = function () {
               alt="image product"
               sizes="(max-width: 876px) 75vw, 33vw"
               fill
-              priority
             />
             <div className={cx("product-content")}>
               <h3>{product.title}</h3>

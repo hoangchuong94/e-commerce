@@ -96,7 +96,6 @@ const Products = function () {
                     alt="product option"
                     sizes="(max-width:375px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                     fill
-                    priority
                   />
                 </div>
                 <div className={cx("content")}>
