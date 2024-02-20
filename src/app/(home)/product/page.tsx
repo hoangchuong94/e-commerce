@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import styles from "./product.module.scss";
 import classnames from "classnames/bind";
